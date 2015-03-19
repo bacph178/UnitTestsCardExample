@@ -14,17 +14,20 @@
 
 @implementation Card
 
-- (int)match:(NSArray *)otherCards
-{
-    int score = 0;
-    for (Card *card in otherCards)
-    {
-        if ([card.contents isEqualToString:self.contents])
-        {
-            score = 1;
-        }
-    }
-    return score;
+-(int)match:(Card *)otherCard {
+    if ([self isCard] && [otherCard isCard]) {
+        if (self.level * 10 + self.rank > otherCard.level * 10 + otherCard.rank) {
+            return 1;
+        } else if (self.level * 10 + self.rank == otherCard.level * 10 + otherCard.rank){
+            return 0;
+        } else return -1;
+    } else return 2;
+}
+
+-(BOOL)isCard {
+    if (self.rank > 0 && self.rank < 5 && self.level > 0 && self.level < 13) {
+        return YES;
+    } else return NO;
 }
 
 @end

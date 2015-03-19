@@ -20,14 +20,8 @@
 		AA2369A618919EB600B5675E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA23698518919EB600B5675E /* Foundation.framework */; };
 		AA2369A718919EB600B5675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA23698918919EB600B5675E /* UIKit.framework */; };
 		AA2369AF18919EB600B5675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA2369AD18919EB600B5675E /* InfoPlist.strings */; };
-		AA5B2FFD1892DF010021C58C /* DeckTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5B2FFC1892DF010021C58C /* DeckTestCase.m */; };
-		AA5B2FFF1892E88E0021C58C /* PlayingCardDeckTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5B2FFE1892E88E0021C58C /* PlayingCardDeckTestCase.m */; };
 		AA9ABDF81891F6A5000DDFC8 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABDF71891F6A5000DDFC8 /* Card.m */; };
-		AA9ABDFB1892025D000DDFC8 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABDFA1892025D000DDFC8 /* PlayingCard.m */; };
-		AA9ABDFE18920755000DDFC8 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABDFD18920755000DDFC8 /* Deck.m */; };
-		AA9ABE0118920819000DDFC8 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABE0018920819000DDFC8 /* PlayingCardDeck.m */; };
 		AA9ABE03189219CE000DDFC8 /* CardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABE02189219CE000DDFC8 /* CardTestCase.m */; };
-		AA9ABE0518922A4B000DDFC8 /* PlayingCardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9ABE0418922A4B000DDFC8 /* PlayingCardTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,18 +53,9 @@
 		AA2369A418919EB600B5675E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AA2369AC18919EB600B5675E /* UnitTestsCardExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTestsCardExampleTests-Info.plist"; sourceTree = "<group>"; };
 		AA2369AE18919EB600B5675E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA5B2FFC1892DF010021C58C /* DeckTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeckTestCase.m; sourceTree = "<group>"; };
-		AA5B2FFE1892E88E0021C58C /* PlayingCardDeckTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeckTestCase.m; sourceTree = "<group>"; };
 		AA9ABDF61891F6A5000DDFC8 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
 		AA9ABDF71891F6A5000DDFC8 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
-		AA9ABDF91892025D000DDFC8 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
-		AA9ABDFA1892025D000DDFC8 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
-		AA9ABDFC18920755000DDFC8 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
-		AA9ABDFD18920755000DDFC8 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
-		AA9ABDFF18920819000DDFC8 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
-		AA9ABE0018920819000DDFC8 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 		AA9ABE02189219CE000DDFC8 /* CardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTestCase.m; sourceTree = "<group>"; };
-		AA9ABE0418922A4B000DDFC8 /* PlayingCardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardTestCase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +143,6 @@
 			children = (
 				AA2369AB18919EB600B5675E /* Supporting Files */,
 				AA9ABE02189219CE000DDFC8 /* CardTestCase.m */,
-				AA9ABE0418922A4B000DDFC8 /* PlayingCardTestCase.m */,
-				AA5B2FFC1892DF010021C58C /* DeckTestCase.m */,
-				AA5B2FFE1892E88E0021C58C /* PlayingCardDeckTestCase.m */,
 			);
 			path = UnitTestsCardExampleTests;
 			sourceTree = "<group>";
@@ -179,12 +161,6 @@
 			children = (
 				AA9ABDF61891F6A5000DDFC8 /* Card.h */,
 				AA9ABDF71891F6A5000DDFC8 /* Card.m */,
-				AA9ABDF91892025D000DDFC8 /* PlayingCard.h */,
-				AA9ABDFA1892025D000DDFC8 /* PlayingCard.m */,
-				AA9ABDFC18920755000DDFC8 /* Deck.h */,
-				AA9ABDFD18920755000DDFC8 /* Deck.m */,
-				AA9ABDFF18920819000DDFC8 /* PlayingCardDeck.h */,
-				AA9ABE0018920819000DDFC8 /* PlayingCardDeck.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -289,9 +265,6 @@
 				AA23699C18919EB600B5675E /* ViewController.m in Sources */,
 				AA23699618919EB600B5675E /* AppDelegate.m in Sources */,
 				AA23699218919EB600B5675E /* main.m in Sources */,
-				AA9ABDFB1892025D000DDFC8 /* PlayingCard.m in Sources */,
-				AA9ABE0118920819000DDFC8 /* PlayingCardDeck.m in Sources */,
-				AA9ABDFE18920755000DDFC8 /* Deck.m in Sources */,
 				AA9ABDF81891F6A5000DDFC8 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9ABE0518922A4B000DDFC8 /* PlayingCardTestCase.m in Sources */,
-				AA5B2FFF1892E88E0021C58C /* PlayingCardDeckTestCase.m in Sources */,
-				AA5B2FFD1892DF010021C58C /* DeckTestCase.m in Sources */,
 				AA9ABE03189219CE000DDFC8 /* CardTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

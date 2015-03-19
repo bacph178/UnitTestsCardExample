@@ -27,40 +27,48 @@
     [super tearDown];
 }
 
-- (void)testMatchesDifferentCardWithSameContents
-{
-    Card *card1 = [[Card alloc] init];
-    card1.contents = @"one";
-    Card *card2 = [[Card alloc] init];
-    card2.contents = @"one";
-    NSArray *handOfCards = @[card2];
-    int matchCount = [card1 match:handOfCards];
-    XCTAssertEqual(matchCount, 1, @"Should have matched");
+- (void)test1 {
+    Card* c1 = [[Card alloc] init];
+    c1.rank = 1;
+    c1.level = 2;
+    Card* c2 = [[Card alloc] init];
+    c2.rank = 3;
+    c2.level = 1;
+    int result = [c2 match:c1];
+    XCTAssertEqual(result, 1, @"match");
 }
 
-- (void)testDoesNotMatchDifferentCard
-{
-    Card *card1 = [[Card alloc] init];
-    card1.contents = @"one";
-    Card *card2 = [[Card alloc] init];
-    card2.contents = @"two";
-    NSArray *handOfCards = @[card2];
-    int matchCount = [card1 match:handOfCards];
-    XCTAssertEqual(matchCount, 0, @"No matches, right?");
+- (void)test2 {
+    Card* c1 = [[Card alloc] init];
+    c1.rank = 0;
+    c1.level = 2;
+    Card* c2 = [[Card alloc] init];
+    c2.rank = 3;
+    c2.level = 1;
+    int result = [c2 match:c1];
+    XCTAssertEqual(result, 2, @"match");
 }
 
-- (void)testMatchesForAtLeastOneCard
-{
-//    NSLog(@"%s doing work...", __PRETTY_FUNCTION__);
-    Card *card1 = [[Card alloc] init];
-    card1.contents = @"one";
-    Card *card2 = [[Card alloc] init];
-    card2.contents = @"two";
-    Card *card3 = [[Card alloc] init];
-    card3.contents = @"one";
-    NSArray *arrayOfCards = @[card2, card3];
-    int matchCount = [card1 match:arrayOfCards];
-    XCTAssertEqual(matchCount, 1, @"Should have matched at least 1");
+- (void)test3 {
+    Card* c1 = [[Card alloc] init];
+    c1.rank = 1;
+    c1.level = 0;
+    Card* c2 = [[Card alloc] init];
+    c2.rank = 0;
+    c2.level = 1;
+    int result = [c2 match:c1];
+    XCTAssertEqual(result, 2, @"match");
+}
+
+- (void)test4 {
+    Card* c1 = [[Card alloc] init];
+    c1.rank = 1;
+    c1.level = 2;
+    Card* c2 = [[Card alloc] init];
+    c2.rank = 3;
+    c2.level = 0;
+    int result = [c2 match:c1];
+    XCTAssertEqual(result, 2, @"match");
 }
 
 @end
